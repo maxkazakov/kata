@@ -10,12 +10,12 @@ import Foundation
 
 class StringCalc {
     func add(numbers: String) -> Int {
-        guard !numbers.isEmpty else {
-            return 0
-        }
-        guard let result = Int(numbers) else {
-            return 3
-        }
+        guard !numbers.isEmpty else { return 0 }
+        
+        let result = numbers.components(separatedBy: ",")
+            .compactMap(Int.init)
+            .reduce(0, +)
+        
         return result
     }
 }

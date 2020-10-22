@@ -12,6 +12,7 @@ class kataTests: XCTestCase {
     // Empty string
     // 1 number
     // 2 numbers divided by comma
+    // more that 2
     var sut: StringCalc!
     
     override func setUp() {
@@ -37,6 +38,12 @@ class kataTests: XCTestCase {
     func test_add_whenNumbersCountIsTwo_itReturnsSumOfThatNumbers() {
         let result = sut.add(numbers: "1,2")
         
-        XCTAssertEqual(result, 3, "Result should be 3")
+        XCTAssertEqual(result, 1 + 2, "Result should be 3")
+    }
+
+    func test_add_whenNumbersMoreThanTwo_itReturnsSumOfThatNumbers() {
+        let result = sut.add(numbers: "3,4,5")
+        
+        XCTAssertEqual(result, 3 + 4 + 5, "Result should be 12")
     }
 }
