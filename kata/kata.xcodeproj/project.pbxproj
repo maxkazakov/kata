@@ -14,19 +14,11 @@
 		9B506E7625417DAA003B7874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B506E7525417DAA003B7874 /* Assets.xcassets */; };
 		9B506E7925417DAA003B7874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B506E7725417DAA003B7874 /* LaunchScreen.storyboard */; };
 		9B506E8425417DAB003B7874 /* kataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B506E8325417DAB003B7874 /* kataTests.swift */; };
-		9B506E8F25417DAB003B7874 /* kataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B506E8E25417DAB003B7874 /* kataUITests.swift */; };
 		9B506EA025417DE5003B7874 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B506E9F25417DE5003B7874 /* Calc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		9B506E8025417DAB003B7874 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B506E6125417DA9003B7874 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B506E6825417DA9003B7874;
-			remoteInfo = kata;
-		};
-		9B506E8B25417DAB003B7874 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9B506E6125417DA9003B7874 /* Project object */;
 			proxyType = 1;
@@ -47,7 +39,6 @@
 		9B506E7F25417DAB003B7874 /* kataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B506E8325417DAB003B7874 /* kataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kataTests.swift; sourceTree = "<group>"; };
 		9B506E8525417DAB003B7874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B506E8A25417DAB003B7874 /* kataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B506E8E25417DAB003B7874 /* kataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kataUITests.swift; sourceTree = "<group>"; };
 		9B506E9025417DAB003B7874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B506E9F25417DE5003B7874 /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
@@ -62,13 +53,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9B506E7C25417DAB003B7874 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B506E8725417DAB003B7874 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,7 +77,6 @@
 			children = (
 				9B506E6925417DA9003B7874 /* kata.app */,
 				9B506E7F25417DAB003B7874 /* kataTests.xctest */,
-				9B506E8A25417DAB003B7874 /* kataUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,24 +152,6 @@
 			productReference = 9B506E7F25417DAB003B7874 /* kataTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9B506E8925417DAB003B7874 /* kataUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B506E9925417DAB003B7874 /* Build configuration list for PBXNativeTarget "kataUITests" */;
-			buildPhases = (
-				9B506E8625417DAB003B7874 /* Sources */,
-				9B506E8725417DAB003B7874 /* Frameworks */,
-				9B506E8825417DAB003B7874 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9B506E8C25417DAB003B7874 /* PBXTargetDependency */,
-			);
-			name = kataUITests;
-			productName = kataUITests;
-			productReference = 9B506E8A25417DAB003B7874 /* kataUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +165,6 @@
 						CreatedOnToolsVersion = 12.0.1;
 					};
 					9B506E7E25417DAB003B7874 = {
-						CreatedOnToolsVersion = 12.0.1;
-						TestTargetID = 9B506E6825417DA9003B7874;
-					};
-					9B506E8925417DAB003B7874 = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = 9B506E6825417DA9003B7874;
 					};
@@ -224,7 +185,6 @@
 			targets = (
 				9B506E6825417DA9003B7874 /* kata */,
 				9B506E7E25417DAB003B7874 /* kataTests */,
-				9B506E8925417DAB003B7874 /* kataUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -241,13 +201,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9B506E7D25417DAB003B7874 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B506E8825417DAB003B7874 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -276,14 +229,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B506E8625417DAB003B7874 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B506E8F25417DAB003B7874 /* kataUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,11 +236,6 @@
 			isa = PBXTargetDependency;
 			target = 9B506E6825417DA9003B7874 /* kata */;
 			targetProxy = 9B506E8025417DAB003B7874 /* PBXContainerItemProxy */;
-		};
-		9B506E8C25417DAB003B7874 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9B506E6825417DA9003B7874 /* kata */;
-			targetProxy = 9B506E8B25417DAB003B7874 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -517,46 +457,6 @@
 			};
 			name = Release;
 		};
-		9B506E9A25417DAB003B7874 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U8743T8Z48;
-				INFOPLIST_FILE = kataUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.kataUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = kata;
-			};
-			name = Debug;
-		};
-		9B506E9B25417DAB003B7874 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U8743T8Z48;
-				INFOPLIST_FILE = kataUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.maxkazakov.kataUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = kata;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,15 +483,6 @@
 			buildConfigurations = (
 				9B506E9725417DAB003B7874 /* Debug */,
 				9B506E9825417DAB003B7874 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9B506E9925417DAB003B7874 /* Build configuration list for PBXNativeTarget "kataUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B506E9A25417DAB003B7874 /* Debug */,
-				9B506E9B25417DAB003B7874 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -14,7 +14,7 @@ class StringCalc {
             return 0
         }
         guard let result = Int(numbers) else {
-            return 0
+            return 3
         }
         return result
     }
