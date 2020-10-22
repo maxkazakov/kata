@@ -15,6 +15,7 @@
 		9B506E7925417DAA003B7874 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B506E7725417DAA003B7874 /* LaunchScreen.storyboard */; };
 		9B506E8425417DAB003B7874 /* kataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B506E8325417DAB003B7874 /* kataTests.swift */; };
 		9B506E8F25417DAB003B7874 /* kataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B506E8E25417DAB003B7874 /* kataUITests.swift */; };
+		9B506EA025417DE5003B7874 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B506E9F25417DE5003B7874 /* Calc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9B506E8A25417DAB003B7874 /* kataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B506E8E25417DAB003B7874 /* kataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kataUITests.swift; sourceTree = "<group>"; };
 		9B506E9025417DAB003B7874 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B506E9F25417DE5003B7874 /* Calc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9B506E7525417DAA003B7874 /* Assets.xcassets */,
 				9B506E7725417DAA003B7874 /* LaunchScreen.storyboard */,
 				9B506E7A25417DAA003B7874 /* Info.plist */,
+				9B506E9F25417DE5003B7874 /* Calc.swift */,
 			);
 			path = kata;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B506EA025417DE5003B7874 /* Calc.swift in Sources */,
 				9B506E7125417DA9003B7874 /* ViewController.swift in Sources */,
 				9B506E6D25417DA9003B7874 /* AppDelegate.swift in Sources */,
 				9B506E6F25417DA9003B7874 /* SceneDelegate.swift in Sources */,

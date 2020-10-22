@@ -9,25 +9,12 @@ import XCTest
 @testable import kata
 
 class kataTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func test_add_whenNumbersIsEmpty_itReturnsEmpty() {
+        let calc = StringCalc()
+        
+        let result = calc.add(numbers: "")
+        
+        XCTAssertEqual(result, 0, "Result should be zero")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
