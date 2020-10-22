@@ -10,6 +10,12 @@ import Foundation
 
 class StringCalc {
     func add(numbers: String) -> Int {
-        0
+        guard !numbers.isEmpty else {
+            return 0
+        }
+        guard let result = Int(numbers) else {
+            return 0
+        }
+        return result
     }
 }

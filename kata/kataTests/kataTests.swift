@@ -9,12 +9,28 @@ import XCTest
 @testable import kata
 
 class kataTests: XCTestCase {
+    // Empty string
+    // 1 number
+    // 2 numbers
+    var sut: StringCalc!
+    
+    override func setUp() {
+        sut = StringCalc()
+    }
+    
+    override func tearDown() {
+        sut = nil
+    }
     
     func test_add_whenNumbersIsEmpty_itReturnsEmpty() {
-        let calc = StringCalc()
-        
-        let result = calc.add(numbers: "")
+        let result = sut.add(numbers: "")
         
         XCTAssertEqual(result, 0, "Result should be zero")
+    }
+    
+    func test_add_whenNumbersIsOneDigit_itReturnsThatDigit() {
+        let result = sut.add(numbers: "1")
+        
+        XCTAssertEqual(result, 1, "Result should be 1")
     }
 }
